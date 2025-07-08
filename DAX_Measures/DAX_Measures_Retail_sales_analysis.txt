@@ -1,0 +1,46 @@
+===============================================
+📊 DAX Measures – ElectroHub Retail Sales Analysis Dashboard
+===============================================
+
+These DAX measures are used to support custom KPIs, dual date range comparison, and promotion-wise sales insights in the Power BI dashboard.
+
+-----------------------------------------------
+🟢 1. Net Sales Between Two Date Filters
+-----------------------------------------------
+
+Sum of Net Sales = 
+CALCULATE(
+    SUM('Fact Table'[Net Sales]),
+    ALL('Date Table 1'),
+    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
+)
+
+-----------------------------------------------
+🟡 2. Quantity Sold Between Two Date Filters
+-----------------------------------------------
+
+Quantity Sold = 
+CALCULATE(
+    SUM('Fact Table'[Units Sold]),
+    ALL('Date Table 1'),
+    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
+)
+
+-----------------------------------------------
+🔵 3. Total Profit Between Two Date Filters
+-----------------------------------------------
+
+Total Profit = 
+CALCULATE(
+    SUM('Fact Table'[Profit]),
+    ALL('Date Table 1'),
+    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
+)
+
+-----------------------------------------------
+🟣 4. Net Sales by Promotion Category
+-----------------------------------------------
+
+SUM DIM Promotion = 
+SUM('Fact Table'[Net Sales])
+
