@@ -4,7 +4,7 @@ This folder contains the raw dataset files used in building the **Electro Hub - 
 
 ## Files Included
 
-- **ElectroHub_RawData.xlsx**  
+- **Store Data.xlsx**  
   Contains all core sales-related data including order details, product info, promotions, customer IDs, pricing, etc.  
   This is the primary fact table used for modeling.
 
