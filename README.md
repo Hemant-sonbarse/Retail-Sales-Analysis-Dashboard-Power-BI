@@ -46,9 +46,8 @@ This Power BI project presents an interactive retail sales dashboard using ficti
 | `PBIX_Files/`       | Final Power BI dashboard file                        |
 | `DAX_Measures/`     | Custom DAX measures used across visuals              |
 | `Screenshots/`      | Visual previews of report pages                      |
-| `Final_Report/`     | Summary report (PDF) — optional                      |
-| `README.md`         | Project documentation (this file)                   |
-| `.gitignore`        | System file exclusions (if needed)                  |
+| `Final_Report/`     | Summary report                                       |
+| `README.md`         | Project documentation                                |
 
 ---
 
